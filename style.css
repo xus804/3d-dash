@@ -1,0 +1,25 @@
+body {
+    margin: 0; background: #000;
+    display: flex; justify-content: center; align-items: center;
+    height: 100dvh; overflow: hidden; font-family: sans-serif;
+    touch-action: none;
+}
+
+#game-wrap { position: relative; border: 4px solid #333; }
+
+#progress-container {
+    position: absolute; top: 0; left: 0; width: 100%; height: 6px;
+    background: rgba(255,255,255,0.1);
+}
+
+#progress-bar {
+    width: 0%; height: 100%; background: #00ff00;
+    transition: width 0.1s;
+}
+
+#hint {
+    position: absolute; bottom: 10px; width: 100%;
+    text-align: center; color: rgba(255,255,255,0.5); font-size: 12px;
+}
+
+canvas { display: block; background: #000814; }
